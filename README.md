@@ -14,3 +14,4 @@ googleapis must be installed using npm
 the index.js must be modified depends on the users mysql like filling in the password etc, to make it work properly
 
 This is a 4-person group web development project created for the WDC course. My main contributions were the database implementation, Google login integration, and development of one of the webpages.
+Check https://github.com/chit320/WDC_project for more develpment process.
