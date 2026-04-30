@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Our Koala</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./javascripts/utils.js"></script>
+    <script src="javascripts/script.js" defer type="module"></script>
+    <script src="../app.js"></script>
+  </head>
+
+  <body>
+    <div class="container" id="app">
+      <app-header></app-header>
+
+      <main>
+        <section
+          class="section hero hero-image fade"
+          v-for="(slide, index) in slides"
+          :key="index"
+          :style="{ display: slideIndex === index + 1 ? 'block' : 'none', backgroundImage: 'url(' + slide.hero_image + ')' }"
+        >
+          <div class="hero-content">
+            <h1>Save Wildlife With Us</h1>
+            <button type="button" class="button">Join Us</button>
+          </div>
+
+          <button type="button" @click="prevAnimal" class="prev-arrow">
+            &lt;
+          </button>
+          <button type="button" @click="nextAnimal" class="next-arrow">
+            &gt;
+          </button>
+        </section>
+
+        <section class="section2 description-content bottomSection">
+          <div class="blank-div"></div>
+          <div class="profileDiv">
+            <div class="profile-content">
+              <h1>
+                <span class="profile-text-main">{{ special.name }}</span>
+                <span class="profile-text-sub"
+                  >{{ special.scientific_name }}</span
+                >
+                <span class="profile-description"
+                  >{{ special.description }}</span
+                >
+                <a :href="specialPageLink" class="button">Learn More</a>
+              </h1>
+            </div>
+            <img :src="special.image" class="profile-image" />
+          </div>
+
+          <div class="personal-container">
+            <div class="weAre">
+              <h2>We are...</h2>
+            </div>
+            <div class="people-container">
+              <div
+                class="person"
+                v-for="(person, index) in people"
+                :key="index"
+              >
+                <img
+                  :src="person.image"
+                  alt="Person's picture"
+                  class="person-image"
+                />
+                <div class="person-content">
+                  <h3>{{ person.name }}</h3>
+                  <p>{{ person.bio }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" @click="prevAnimal" class="prev-arrow">
+            &lt;
+          </button>
+          <button type="button" @click="nextAnimal" class="next-arrow">
+            &gt;
+          </button>
+        </section>
+
+        <section
+        :style="{ backgroundImage: 'url(../assets/images/heroImage/Hero_Koala.jpg)' }"
+        class="popUpContainer bottomSection"
+      >
+        <div class="topTitle description-content">
+          <h1 class="profile-text-main">What is Save Australia Wildlife With Us...</h1>
+        </div>
+
+        <div class="popZone">
+          <h2>This is our very first mission, aimed at protecting</h2>
+          <h2>Australian wildlife by promoting awareness and the correct</h2>
+          <h2>ways to interact with these animals.</h2>
+        </div>
+      </section>
+
+        <div class="remaining-space">
+          <p>"Saving Australia's Endangered, Together for a Wilder Future"</p>
+        </div>
+        <footer>
+          <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+        </footer>
+      </main>
+
+      <div class="dark-mode-toggle" @click="toggleDarkMode()">
+        <img
+          :src="darkMode ? 'assets/icons/lightBulb-off.svg' : 'assets/icons/lightBulb-on.svg'"
+        />
+      </div>
+    </div>
+  </body>
+</html>

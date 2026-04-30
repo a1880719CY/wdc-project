@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greater Stick-nest Rat Information</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascripts/utils.js"></script>
+    <script src="../javascripts/script.js" defer type="module"></script>
+    <script src="../app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <app-header></app-header>
+
+      <section class="section2 description-content bottomSection">
+        <div class="blank-div"></div>
+        <div class="profileDiv">
+          <div class="profile-content">
+            <h1>
+              <span class="profile-text-main">Greater Stick-nest Rat</span>
+              <span class="profile-text-sub"
+                >Leporillus conditor</span
+              >
+              <span class="profile-description">
+                The Greater Stick-nest Rat is a distinctive rodent native to Australia, known for its large size and unique nesting behavior. These rats build elaborate stick nests, often high in trees, to protect themselves from predators and the elements.
+              </span>
+            </h1>
+          </div>
+          <img src="../assets/images/profileImage/Profile_GreaterStickNestRat.jpg" class="profile-image" />
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Habitat</h2>
+          <p class="animal-description">
+            Greater Stick-nest Rats are primarily found in arid and semi-arid regions of central Australia. They inhabit spinifex grasslands, rocky outcrops, and woodland areas where they build their characteristic stick nests. These nests provide shelter and a safe haven from predators.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Diet</h2>
+          <p class="animal-description">
+            The diet of Greater Stick-nest Rats consists mainly of seeds, leaves, and roots of various plants, including spinifex grass and other native vegetation. They are also known to consume insects and other small invertebrates found within their habitat.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Conservation Status</h2>
+          <p class="animal-description">
+            Greater Stick-nest Rats are classified as endangered, with populations significantly reduced due to habitat loss, predation by introduced species, and climatic changes. Conservation efforts include habitat restoration, captive breeding programs, and reintroduction to former habitats.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">How to Help</h2>
+          <p class="animal-description">
+            You can help protect Greater Stick-nest Rats by supporting conservation organizations, advocating for the preservation of their natural habitats, and spreading awareness about their endangered status. Donations to wildlife conservation groups and participation in habitat restoration projects are crucial for their survival.
+          </p>
+        </div>
+      </section>
+      <div class="remaining-space">
+        <p>"Saving Australia's Endangered, Together for a Wilder Future"</p>
+      </div>
+      <footer>
+        <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+      </footer>
+    </main>
+
+    <div class="dark-mode-toggle" @click="toggleDarkMode()">
+      <img
+        :src="darkMode ? '../assets/icons/lightBulb-off.svg' : '../assets/icons/lightBulb-on.svg'"
+      />
+    </div>
+
+    </div>
+  </body>
+</html>

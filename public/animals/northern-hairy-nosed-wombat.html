@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northern Hairy-nosed Wombat Information</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascripts/utils.js"></script>
+    <script src="../javascripts/script.js" defer type="module"></script>
+    <script src="../app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <app-header></app-header>
+
+      <section class="section2 description-content bottomSection">
+        <div class="blank-div"></div>
+        <div class="profileDiv">
+          <div class="profile-content">
+            <h1>
+              <span class="profile-text-main">Northern Hairy-nosed Wombat</span>
+              <span class="profile-text-sub"
+                >Lasiorhinus krefftii</span
+              >
+              <span class="profile-description">
+                Northern Hairy-nosed Wombats are one of the world's most endangered mammals. They are distinguished by their broad heads, large noses covered with fine hairs, and soft, grey fur. These wombats are known for their burrowing habits and nocturnal lifestyle.
+              </span>
+            </h1>
+          </div>
+          <img src="../assets/images/profileImage/Profile_NorthernHairyNosedWombat.jpg" class="profile-image" />
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Habitat</h2>
+          <p class="animal-description">
+            Northern Hairy-nosed Wombats are found in a small area of Epping Forest National Park in Queensland, Australia. They prefer grassy woodland habitats with sandy soils that are suitable for burrowing.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Diet</h2>
+          <p class="animal-description">
+            The diet of Northern Hairy-nosed Wombats primarily consists of native grasses. They feed on various species of grass, including spear grass and tussock grass, which provide the necessary nutrients and moisture for their survival.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Conservation Status</h2>
+          <p class="animal-description">
+            Northern Hairy-nosed Wombats are critically endangered, with only a small population remaining. Major threats include habitat loss, predation by introduced species, and competition for food. Conservation efforts focus on habitat protection, population monitoring, and research on reproductive biology.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">How to Help</h2>
+          <p class="animal-description">
+            You can help protect Northern Hairy-nosed Wombats by supporting conservation organizations, advocating for habitat preservation, and raising awareness about their endangered status. Donations to wildlife conservation groups and participation in conservation projects can significantly contribute to their survival.
+          </p>
+        </div>
+      </section>
+      <div class="remaining-space">
+        <p>"Saving Australia's Endangered, Together for a Wilder Future"</p>
+      </div>
+      <footer>
+        <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+      </footer>
+    </main>
+
+    <div class="dark-mode-toggle" @click="toggleDarkMode()">
+      <img
+        :src="darkMode ? '../assets/icons/lightBulb-off.svg' : '../assets/icons/lightBulb-on.svg'"
+      />
+    </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carpentarian Rock Rat Information</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascripts/utils.js"></script>
+    <script src="../javascripts/script.js" defer type="module"></script>
+    <script src="../app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <app-header></app-header>
+
+      <section class="section2 description-content bottomSection">
+        <div class="blank-div"></div>
+        <div class="profileDiv">
+          <div class="profile-content">
+            <h1>
+              <span class="profile-text-main">Carpentarian Rock Rat</span>
+              <span class="profile-text-sub"
+                >Zyzomys palatalis</span
+              >
+              <span class="profile-description">
+                The Carpentarian Rock Rat is an endangered rodent found in a small region of northern Australia. These elusive animals are known for their robust build, thick tail, and habitat preference for rocky outcrops and escarpments.
+              </span>
+            </h1>
+          </div>
+          <img src="../assets/images/profileImage/Profile_CarpentarianRockRat.jpg" class="profile-image" />
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Habitat</h2>
+          <p class="animal-description">
+            Carpentarian Rock Rats inhabit the rugged, rocky landscapes of the Gulf of Carpentaria in northern Australia. They prefer areas with abundant rock crevices and shelters, which provide protection from predators and harsh weather conditions.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Diet</h2>
+          <p class="animal-description">
+            The diet of Carpentarian Rock Rats primarily consists of seeds, fruits, and other plant materials. They are also known to consume insects and other small invertebrates. Their foraging habits are adapted to the sparse resources available in their rocky habitat.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Conservation Status</h2>
+          <p class="animal-description">
+            Carpentarian Rock Rats are listed as endangered due to their limited distribution and declining population. Major threats include habitat destruction, altered fire regimes, and predation by introduced species. Conservation efforts focus on habitat protection, fire management, and predator control.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">How to Help</h2>
+          <p class="animal-description">
+            You can help protect Carpentarian Rock Rats by supporting conservation organizations, advocating for the protection of their rocky habitats, and raising awareness about their endangered status. Donations to wildlife conservation groups and volunteering your time to help with local conservation efforts are essential for their survival.
+          </p>
+        </div>
+      </section>
+      <div class="remaining-space">
+        <p>"Saving Australia's Endangered, Together for a Wilder Future"</p>
+      </div>
+      <footer>
+        <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+      </footer>
+    </main>
+
+    <div class="dark-mode-toggle" @click="toggleDarkMode()">
+      <img
+        :src="darkMode ? '../assets/icons/lightBulb-off.svg' : '../assets/icons/lightBulb-on.svg'"
+      />
+    </div>
+
+    </div>
+  </body>
+</html>

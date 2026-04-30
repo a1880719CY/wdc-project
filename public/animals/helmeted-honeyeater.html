@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helmeted Honeyeater Information</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascripts/utils.js"></script>
+    <script src="../javascripts/script.js" defer type="module"></script>
+    <script src="../app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <app-header></app-header>
+
+      <section class="section2 description-content bottomSection">
+        <div class="blank-div"></div>
+        <div class="profileDiv">
+          <div class="profile-content">
+            <h1>
+              <span class="profile-text-main">Helmeted Honeyeater</span>
+              <span class="profile-text-sub"
+                >Lichenostomus melanops cassidix</span
+              >
+              <span class="profile-description">
+                The Helmeted Honeyeater is a critically endangered bird endemic to Victoria, Australia. Known for its striking yellow and black plumage and distinctive "helmet" of feathers on its head, this bird is the state's bird emblem and has a vital role in its ecosystem.
+              </span>
+            </h1>
+          </div>
+          <img src="../assets/images/profileImage/Profile_HelmetedHoneyeater.jpg" class="profile-image" />
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Habitat</h2>
+          <p class="animal-description">
+            Helmeted Honeyeaters are found in a few small, isolated patches of swampy forest and woodland in Victoria. Their habitats include riparian forests and dense vegetation along streams, where they build their nests and forage for food.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Diet</h2>
+          <p class="animal-description">
+            The diet of Helmeted Honeyeaters consists primarily of nectar, supplemented by insects and spiders. They feed on the nectar of a variety of native flowers, including eucalypts and banksias, which provide essential nutrients for their survival.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Conservation Status</h2>
+          <p class="animal-description">
+            Helmeted Honeyeaters are critically endangered, with only a small population remaining in the wild. Major threats include habitat destruction, altered fire regimes, and predation by introduced species. Conservation efforts focus on habitat restoration, captive breeding programs, and predator control.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">How to Help</h2>
+          <p class="animal-description">
+            You can help protect Helmeted Honeyeaters by supporting conservation organizations, participating in habitat restoration projects, and raising awareness about their endangered status. Donations to wildlife conservation groups and volunteering your time to help with local conservation efforts can make a significant difference.
+          </p>
+        </div>
+      </section>
+      <div class="remaining-space">
+        <p>"Saving Australia's Endangered, Together for a Wilder Future"</p>
+      </div>
+      <footer>
+        <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+      </footer>
+    </main>
+
+    <div class="dark-mode-toggle" @click="toggleDarkMode()">
+      <img
+        :src="darkMode ? '../assets/icons/lightBulb-off.svg' : '../assets/icons/lightBulb-on.svg'"
+      />
+    </div>
+
+    </div>
+  </body>
+</html>

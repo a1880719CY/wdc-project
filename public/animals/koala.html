@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koala Information</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascripts/utils.js"></script>
+    <script src="../javascripts/script.js" defer type="module"></script>
+    <script src="../app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <app-header></app-header>
+
+      <section class="section2 description-content bottomSection">
+        <div class="blank-div"></div>
+        <div class="profileDiv">
+          <div class="profile-content">
+            <h1>
+              <span class="profile-text-main">Koala</span>
+              <span class="profile-text-sub"
+                >Phascolarctos cinereus</span
+              >
+              <span class="profile-description">
+                Koalas are native to Australia and are known for their
+                distinctive appearance, with large, round ears, a short, pointed
+                nose, and a thick, woolly coat. They are arboreal marsupials,
+                spending most of their lives in trees, primarily eucalyptus
+                trees.</span
+              >
+            </h1>
+          </div>
+          <img src="../assets/images/profileImage/Profile_Koala.jpg" class="profile-image" />
+
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Habitat</h2>
+          <p class="animal-description">
+            Koalas are found in the eastern and southeastern parts of Australia.
+            Their preferred habitat includes eucalyptus forests and woodlands,
+            where they find the leaves they eat and the trees they use for
+            shelter and nesting.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Diet</h2>
+          <p class="animal-description">
+            Koalas have a specialized diet consisting almost exclusively of
+            eucalyptus leaves. They are able to eat a wide variety of eucalyptus
+            species, though they show a preference for certain types. They have
+            a slow metabolism, allowing them to survive on a low-energy diet.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Conservation Status</h2>
+          <p class="animal-description">
+            Koalas are currently classified as vulnerable due to habitat loss,
+            disease, and the impacts of climate change. Conservation efforts are
+            underway to protect their habitats and ensure their survival. Key
+            actions include habitat restoration, disease control, and legal
+            protection of koala habitats.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">How to Help</h2>
+          <p class="animal-description">
+            You can help protect koalas by supporting conservation
+            organizations, participating in habitat restoration projects, and
+            spreading awareness about the importance of protecting these unique
+            animals. Consider donating to wildlife conservation groups or
+            volunteering your time to help with local conservation efforts.
+          </p>
+        </div>
+      </section>
+      <div class="remaining-space">
+        <p>"Saving Australia's Endangered, Together for a Wilder Future"</p>
+      </div>
+      <footer>
+        <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+      </footer>
+    </main>
+
+    <div class="dark-mode-toggle" @click="toggleDarkMode()">
+      <img
+        :src="darkMode ? '../assets/icons/lightBulb-off.svg' : '../assets/icons/lightBulb-on.svg'"
+      />
+    </div>
+
+    </div>
+  </body>
+</html>

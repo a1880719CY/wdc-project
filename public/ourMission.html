@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Our Koala</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./javascripts/utils.js"></script>
+    <script src="javascripts/script.js" defer type="module"></script>
+    <script src="../app.js"></script>
+  </head>
+
+  <body>
+    <div class="container" id="app">
+      <app-header></app-header>
+
+      <main>
+        <section
+          :style="{ backgroundImage: 'url(../assets/images/heroImage/ProtectingAimImage.jpg)' }"
+          class="hero"
+        >
+          <div class="pentagonDiv">
+            <div class="pentagonContent">
+              <h1>What's our mission:</h1>
+              <h2>At the International Division of Kindness (IDK),</h2>
+              <h2>our aim is to raise awareness about the importance of</h2>
+              <h2>
+                protecting wildlife. We promote the correct and humane ways
+              </h2>
+              <h2>
+                to interact with animals, fostering respect and compassion for
+                all
+              </h2>
+              <h2>
+                living beings. Through education and community engagement,
+              </h2>
+              <h2>we strive to create a world where humans and animals</h2>
+              <h2>coexist harmoniously.</h2>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+      </footer>
+
+      <div class="dark-mode-toggle" @click="toggleDarkMode()">
+        <img
+          :src="darkMode ? 'assets/icons/lightBulb-off.svg' : 'assets/icons/lightBulb-on.svg'"
+        />
+      </div>
+    </div>
+  </body>
+</html>

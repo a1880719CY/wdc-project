@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orgDetails</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/orgDetails.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./javascripts/utils.js"></script>
+    <script src="javascripts/script.js" defer type="module"></script>
+    <script src="../app.js"></script>
+</head>
+<body>
+    <div  class="container" id="app">
+        <app-header></app-header>
+        <div class="banner">
+            <img :src="volunteerOrgList[0].background" alt="">
+        </div>
+        <div class="main">
+            <div class="header">
+                <h1>{{volunteerOrgList[0].name}}</h1>
+                  <button class="join" @click="joinOrg(volunteerOrgList[0])">join the organization</button>
+            </div>
+            <div class="content">
+                <p>
+                    {{volunteerOrgList[0].introduce}}
+                </p>
+              <div class="information">
+                <div>E-mail: &nbsp;&nbsp;<span >{{volunteerManagerInfo.email}}</span></div>
+                <div>Volunteer organization manager:&nbsp;&nbsp;<span >{{volunteerManagerInfo.fullName}}</span></div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

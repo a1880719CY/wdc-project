@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gilbert's Potoroo Information</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascripts/utils.js"></script>
+    <script src="../javascripts/script.js" defer type="module"></script>
+    <script src="../app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <app-header></app-header>
+
+      <section class="section2 description-content bottomSection">
+        <div class="blank-div"></div>
+        <div class="profileDiv">
+          <div class="profile-content">
+            <h1>
+              <span class="profile-text-main">Gilbert's Potoroo</span>
+              <span class="profile-text-sub"
+                >Potorous gilbertii</span
+              >
+              <span class="profile-description">
+                Gilbert's Potoroo is one of Australia's most endangered marsupials. These small, nocturnal animals are known for their soft, dense fur and their preference for dense, long-unburnt vegetation. They are critical for the ecosystem due to their role in spore dispersal of fungi.
+              </span>
+            </h1>
+          </div>
+          <img src="../assets/images/profileImage/Profile_GilbertsPotoroo.jpg" class="profile-image" />
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Habitat</h2>
+          <p class="animal-description">
+            Gilbert's Potoroo is found in a few isolated locations in southwestern Australia, particularly in areas with dense understorey vegetation. Their habitat consists of long-unburnt shrublands and heathlands, where they can find food and shelter.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Diet</h2>
+          <p class="animal-description">
+            The diet of Gilbert's Potoroo is primarily composed of fungi, particularly underground truffles. They also consume seeds, berries, and small invertebrates. Their foraging behavior helps disperse fungal spores, which is essential for the health of their ecosystem.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Conservation Status</h2>
+          <p class="animal-description">
+            Gilbert's Potoroo is critically endangered, with a population of fewer than 100 individuals remaining in the wild. Major threats include habitat destruction, altered fire regimes, and predation by introduced species. Conservation efforts focus on habitat protection, captive breeding programs, and translocation to suitable habitats.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">How to Help</h2>
+          <p class="animal-description">
+            You can help protect Gilbert's Potoroo by supporting conservation organizations, participating in habitat restoration projects, and raising awareness about their endangered status. Donations to wildlife conservation groups and volunteering your time to help with local conservation efforts are crucial for their survival.
+          </p>
+        </div>
+      </section>
+      <div class="remaining-space">
+        <p>"Saving Australia's Endangered, Together for a Wilder Future"</p>
+      </div>
+      <footer>
+        <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+      </footer>
+    </main>
+
+    <div class="dark-mode-toggle" @click="toggleDarkMode()">
+      <img
+        :src="darkMode ? '../assets/icons/lightBulb-off.svg' : '../assets/icons/lightBulb-on.svg'"
+      />
+    </div>
+
+    </div>
+  </body>
+</html>

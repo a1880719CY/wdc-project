@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leadbeater's Possum Information</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascripts/utils.js"></script>
+    <script src="../javascripts/script.js" defer type="module"></script>
+    <script src="../app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <app-header></app-header>
+
+      <section class="section2 description-content bottomSection">
+        <div class="blank-div"></div>
+        <div class="profileDiv">
+          <div class="profile-content">
+            <h1>
+              <span class="profile-text-main">Leadbeater's Possum</span>
+              <span class="profile-text-sub"
+                >Gymnobelideus leadbeateri</span
+              >
+              <span class="profile-description">
+                Leadbeater's Possums are small, nocturnal marsupials native to
+                the Central Highlands of Victoria, Australia. They are known for
+                their long tails, pointed snouts, and distinctively large eyes,
+                which help them navigate their arboreal habitats at night.
+              </span>
+            </h1>
+          </div>
+          <img src="../assets/images/profileImage/Profile_LeadbeatersPossum.jpg" class="profile-image" />
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Habitat</h2>
+          <p class="animal-description">
+            Leadbeater's Possums are primarily found in the old-growth mountain
+            ash forests of the Central Highlands of Victoria. These forests
+            provide the dense canopy and tree hollows necessary for their
+            nesting and shelter.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Diet</h2>
+          <p class="animal-description">
+            The diet of Leadbeater's Possums consists mainly of insects and
+            tree sap. They are known to feed on wattle sap, lerp, and
+            honeydew, as well as insects and spiders, which they find in the
+            bark and foliage of trees.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Conservation Status</h2>
+          <p class="animal-description">
+            Leadbeater's Possums are currently listed as critically endangered
+            due to habitat loss from logging, bushfires, and climate change.
+            Conservation efforts focus on habitat protection, restoration, and
+            the establishment of wildlife corridors to connect fragmented
+            populations.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">How to Help</h2>
+          <p class="animal-description">
+            You can help protect Leadbeater's Possums by supporting conservation
+            organizations, advocating for the protection of old-growth forests,
+            and raising awareness about their plight. Donations to conservation
+            groups and participation in local conservation projects can make a
+            significant impact.
+          </p>
+        </div>
+      </section>
+      <div class="remaining-space">
+        <p>"Saving Australia's Endangered, Together for a Wilder Future"</p>
+      </div>
+      <footer>
+        <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+      </footer>
+    </main>
+
+    <div class="dark-mode-toggle" @click="toggleDarkMode()">
+      <img
+        :src="darkMode ? '../assets/icons/lightBulb-off.svg' : '../assets/icons/lightBulb-on.svg'"
+      />
+    </div>
+
+    </div>
+  </body>
+</html>

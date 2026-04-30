@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Western Swamp Tortoise Information</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascripts/utils.js"></script>
+    <script src="../javascripts/script.js" defer type="module"></script>
+    <script src="../app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <app-header></app-header>
+
+      <section class="section2 description-content bottomSection">
+        <div class="blank-div"></div>
+        <div class="profileDiv">
+          <div class="profile-content">
+            <h1>
+              <span class="profile-text-main">Western Swamp Tortoise</span>
+              <span class="profile-text-sub"
+                >Pseudemydura umbrina</span
+              >
+              <span class="profile-description">
+                The Western Swamp Tortoise is one of Australia's most endangered reptiles. These small tortoises are distinguished by their short necks, distinctive shells, and preference for living in ephemeral swamps. They are known for their unique behavior of burrowing into the mud during dry periods.
+              </span>
+            </h1>
+          </div>
+          <img src="../assets/images/profileImage/Profile_WesternSwampTortoise.jpg" class="profile-image" />
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Habitat</h2>
+          <p class="animal-description">
+            Western Swamp Tortoises are found in a few locations in southwestern Australia. Their habitats are seasonal swamps that fill during the winter and dry out in the summer. These swamps provide the necessary conditions for their breeding and foraging.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Diet</h2>
+          <p class="animal-description">
+            The diet of Western Swamp Tortoises includes small aquatic invertebrates such as insects, worms, and crustaceans. They are opportunistic feeders, taking advantage of the seasonal abundance of prey in their swamp habitats.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">Conservation Status</h2>
+          <p class="animal-description">
+            Western Swamp Tortoises are critically endangered, with very few individuals remaining in the wild. Major threats include habitat destruction, altered hydrology, predation by introduced species, and climate change. Conservation efforts focus on habitat protection, captive breeding, and reintroduction programs.
+          </p>
+        </div>
+      </section>
+
+      <section class="profileDiv">
+        <div class="animal-content">
+          <h2 class="animal-text-main">How to Help</h2>
+          <p class="animal-description">
+            You can help protect Western Swamp Tortoises by supporting conservation organizations, advocating for the protection of their swamp habitats, and raising awareness about their endangered status. Donations to wildlife conservation groups and participation in habitat restoration projects can make a significant impact.
+          </p>
+        </div>
+      </section>
+      <div class="remaining-space">
+        <p>"Saving Australia's Endangered, Together for a Wilder Future"</p>
+      </div>
+      <footer>
+        <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+      </footer>
+    </main>
+
+    <div class="dark-mode-toggle" @click="toggleDarkMode()">
+      <img
+        :src="darkMode ? '../assets/icons/lightBulb-off.svg' : '../assets/icons/lightBulb-on.svg'"
+      />
+    </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Our Koala</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./javascripts/utils.js"></script>
+    <script src="javascripts/script.js" defer type="module"></script>
+    <script src="../app.js"></script>
+  </head>
+
+  <body>
+    <div class="container" id="app">
+      <app-header>
+      </app-header>
+
+      <main class="SMPage">
+        <h1>Changing the post on Social Media Page</h1>
+        <form id="updateForm">
+            <label for="twitterP">New Twitter Post ID (For Latest Animals News):</label>
+            <input type="text" id="twitterP" name="twitterP"><br><br>
+            <label for="instagramP1">New Instagram Post ID (For Our Last Event):</label>
+            <input type="text" id="instagramP1" name="instagramP1"><br><br>
+            <label for="instagramP2">New Instagram Post ID (For Our Upcoming Event):</label>
+            <input type="text" id="instagramP2" name="instagramP2"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="systemMessage"></div>
+
+        <footer>
+          <p>&copy; 2024 WDC Grp65. No rights reserved.</p>
+        </footer>
+      </main>
+
+      <div class="dark-mode-toggle" @click="toggleDarkMode()">
+        <img
+          :src="darkMode ? 'assets/icons/lightBulb-off.svg' : 'assets/icons/lightBulb-on.svg'"
+        />
+      </div>
+    </div>
+  </body>
+</html>

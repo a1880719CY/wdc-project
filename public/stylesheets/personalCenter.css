@@ -1,0 +1,35 @@
+.form{
+    padding:30px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 160px auto;
+}
+.form label{
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form  input{
+    width: 150px;
+    height: 34px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.item{
+    margin-bottom: 10px;
+}
+button{
+    float: right;
+    height: 34px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background: #545454;
+}
